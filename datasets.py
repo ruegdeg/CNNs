@@ -182,6 +182,7 @@ class TestDataset(Dataset):
                     f"Test list not provided for dataset: {self.test_data}")
 
             list_name = os.path.join(self.data_root, self.test_list)
+            print(">>>check")
             with open(list_name, 'r') as f:
                 files = f.readlines()
             files = [line.strip() for line in files]
